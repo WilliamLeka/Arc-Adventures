@@ -55,7 +55,7 @@ int main()
     while (gameEnd == 0)
     {
         // Print ASCII ART from file arcAdventures.txt
-        strcpy(filename, "arcAdventures.txt");
+        strcpy(filename, ".\\ASCII\\arcAdventures.txt");
         printArt(filename);
         printf("Welcome to Arc-Adventures text based adventure game\n");
         
@@ -122,7 +122,7 @@ int main()
                     
                     printf("You have selected The Wizard\n");
                     // print ASCII ART wizard
-                    strcpy(filename, "wizard.txt"); 
+                    strcpy(filename, ".\\ASCII\\wizard.txt"); 
                     printArt(filename);
                     error = 0; // selected class successfully
                     break;
@@ -132,7 +132,7 @@ int main()
                 {
                     printf("You have selected The Knight\n");
                     // print ASCII ART knight
-                    strcpy(filename, "knight.txt");
+                    strcpy(filename, ".\\ASCII\\knight.txt");
                     printArt(filename);
                     error = 0; // selected class successfully
                     break;
@@ -267,7 +267,7 @@ int main()
 void gateEncounter(char filename[]) 
 {
     // print gate ASCII ART
-    strcpy(filename,"gate.txt");
+    strcpy(filename,".\\ASCII\\gate.txt");
     printArt(filename);
 
     
@@ -335,7 +335,7 @@ void healthEncounter(int *playerHealth,char filename[])
     *playerHealth += health;
 
     // print health ASCII ART
-    strcpy(filename, "health.txt");
+    strcpy(filename, ".\\ASCII\\health.txt");
     printArt(filename);
 
 
@@ -371,7 +371,7 @@ int barbarianEncounter(int playerDamage[],int *playerHealth,int selectedClass)
     int barbarianHealth = 100;
 
     // prints barbarian ASCII ART
-    strcpy(filename, "barbarian.txt");
+    strcpy(filename, ".\\ASCII\\barbarian.txt");
     printArt(filename);
     printf("You have encountered an Tribe Member!\n");
 
@@ -470,7 +470,7 @@ int tribeEncounter(int playerDamage[],int *playerHealth,int selectedClass)
     int tribeHealth = 75;
 
     // prints tribe ASCII ART
-    strcpy(filename, "trible.txt");
+    strcpy(filename, ".\\ASCII\\tribe.txt");
     printArt(filename);
     printf("You have encountered an Tribe Member!\n");
 
